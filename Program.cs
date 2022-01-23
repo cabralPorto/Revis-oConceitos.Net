@@ -32,11 +32,18 @@ namespace Revisao
 
                         alunos[indiceAluno] = aluno;
                         indiceAluno++;
-                       
                         break;
                     
                     case "2":
-                    //TODO: listar alunos
+                        
+                        foreach(var a in alunos)
+                        {   
+                            if(!string.IsNullOrEmpty(a.Nome))
+                            {
+                                Console.WriteLine($"Aluno: {a.Nome} - Nota: {a.Nota}");
+                            }
+
+                        }
                     break;
 
                     case "3":
