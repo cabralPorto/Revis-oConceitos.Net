@@ -59,23 +59,23 @@ namespace Revisao
                                 nrAlunos++;
                             }
                         }
-                        var MediaGeral = notaTotal / nrAlunos;
+                        var mediaGeral = notaTotal / nrAlunos;
 
                         Conceito conceitoGeral;
                         
-                        if(MediaGeral < 3)
+                        if(mediaGeral < 3)
                         {
                             conceitoGeral = Conceito.E;
                         }
-                        else if(MediaGeral < 5)
+                        else if(mediaGeral < 5)
                         {
                             conceitoGeral = Conceito.D;
                         }
-                        else if(MediaGeral < 6)
+                        else if(mediaGeral < 6)
                         {
                              conceitoGeral = Conceito.C;
                         }
-                        else if (MediaGeral < 9)
+                        else if (mediaGeral < 9)
                         {
                             conceitoGeral = Conceito.B;
                         } 
@@ -84,7 +84,7 @@ namespace Revisao
                             conceitoGeral = Conceito.A;
                         }
 
-                          Console.WriteLine($"MEDIA GERAL: {MediaGeral} CONCEITO {conceitoGeral}");
+                          Console.WriteLine($"MEDIA GERAL: {mediaGeral} CONCEITO {conceitoGeral}");
                    
                         break;
 
